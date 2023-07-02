@@ -1,0 +1,198 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniformes Tocinos</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <!-- css -->
+    <link type='text/css' href='{%static "css/estilo.css" %}' rel='stylesheet'/>
+</head>
+<body>
+    <!-- ============================================== -->
+    <!-- MENU -->
+    <!-- ============================================== -->
+    <header data-bs-theme="light">
+
+        <div class="navbar navbar-expand-lg navbar-light" id="menu">
+          <div class="container">
+            <a href="#" class="navbar-brand ">              
+              <strong><img src='{% static "img/Logos/tocinoslogo.png" %}' alt="" width="150" height="150"></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarHeader">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href= '{%url "uniformes:index" %}' class="nav-link active">Inicio</a>
+
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Uniformes Colegios</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href='{%url "uniformes:escuelainglaterra" %}' >Escuela de Inglaterra</a></li>
+                            <li><a class="dropdown-item" href= '{%url "uniformes:escabatemolina" %}' >Escuela Abate Molina</a></li>
+                        </ul>
+                    </li>
+
+
+                    
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"></a>    
+                    </li>
+                </ul>
+                   <a href='{%url "uniformes:cotizacion" %}' class="btn btn-primary">Cotizar</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <main>
+    
+
+    <!-- ============================================== -->
+    <!-- CARRUSEL-->
+    <!-- ============================================== -->
+ 
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src= '{% static "img/Disenio/uniformesEscolares3.jpg" %}' class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item"data-bs-interval="3000">
+          <img src= '{% static "img/Disenio/uniformesEscolares2.jpg" %}' class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item"data-bs-interval="3000">
+          <img src= '{% static "img/Disenio/uniformesEscolares.jpg" %}' class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- INTRO-->
+    <!-- ============================================== -->
+     <section class="w-50 mx-auto text-center pt-5" id="intro">
+      <h1 class="p-3 fs-2 border-top border-3">Una tienda única para tus necesidades en <span class="text-primary">Uniformes Escolares</span></h1>
+      <p>Uniformes Tocinos <span class="text-primary">Poleras de colegios, camisas, pantalones, faldas, jumpers, buzos. </span></p>
+     </section>     
+     
+    <!-- ============================================== -->
+    <!-- SERVICIOS-->
+    <!-- ============================================== -->
+    <section class="container-fluid">
+      <div class="row w-75 mx-auto servicio-fila">
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+          <img src= '{% static "img/Productos/EscuelaInglaterra/PoleraEscIngl1.png" %}' alt="" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 p-1 ">Escuela de Inglaterra</h3>
+            <p class="px-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div> 
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+          <img src= '{% static "img/Productos/AbateMolina/PoleraEscAbMol1.png" %}' alt="" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 p-1 ">Escuela Abate Molina</h3>
+            <p class="px-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row w-75 mx-auto servicio-fila">
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+          <img src= '{% static "img/Productos/EscuelaInglaterra/BuzoEscIngl.png" %}' alt="" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 p-1 ">Buzos Colegios</h3>
+            <p class="px-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div> 
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+          <img src= '{% static "img/Productos/Generico/buzo.png" %}' alt="" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 p-1 ">Buzos Genéricos</h3>
+            <p class="px-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ============================================== -->
+    <!-- ACERCA DE NOSOTROS-->
+    <!-- ============================================== -->                    
+    
+    <section>
+      <div class="w-75 m-auto text-center" id="equipo">
+        <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-primary">resultados grandes</span></h1>
+        <p class="fs-4">Siempre buscamos a las personas adecuadas para que trabajen con nosotros.
+          Si te sientes listo para este reto, te esperamos para que te unas a nosotros.</p>
+      </div>
+      
+      <div class="mt-5 text-center">
+        <img class="img-fluid" src= '{% static "img/Logos/tocinoslogo.png" %}'  alt="equipo">
+      </div>
+
+     
+       
+      </section>
+
+   
+    </section>       
+  
+
+
+<div id="infoApi">
+
+</div>
+
+    <!-- ============================================== -->
+    <!-- FOOTER-->
+    <!-- ============================================== --> 
+
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+      <p class="fs-5 px-3 pt-3">Tocinos. &copy; Todos los derechos reservados 2023</p>
+      <div id="iconos">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </footer>
+                
+            
+        </div>
+    </main>
+
+<!-- JQuery -->
+<script src= "https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+<!-- JavaScript -->
+<script src= '{% static "js/java.js"%}'></script>
+
+</body>
+</html>
+

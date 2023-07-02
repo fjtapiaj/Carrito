@@ -4,9 +4,20 @@ from django.shortcuts import render, HttpResponse, redirect
 from CarritoApp.Carrito import Carrito
 from CarritoApp.models import Producto
 
+#def index(request):
+    
+ #   context={}
+  #  return render(request, 'Carrito/index.html', context)
+
+
+#def carrito(request):
+    
+ #   context={}
+  #  return render(request, 'CarritoApp/tienda.html', context)
+
+
 
 def tienda(request):
-    #return HttpResponse("Hola Pythonizando")
     productos = Producto.objects.all()
     return render(request, "tienda.html", {'productos':productos})
 
