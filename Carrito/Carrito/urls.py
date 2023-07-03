@@ -16,7 +16,7 @@ Including another URLconf
 from django import views
 #from django.views import views
 #from . import views
-
+from django.contrib.auth import views as auth_views
 from django.contrib import admin
 from django.urls import path, include
 
@@ -27,10 +27,12 @@ app_name = 'CarritoApp'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('index/', index, name="index"),
     path('carrito/', tienda, name="Tienda"),
     path('agregar/<int:producto_id>/', agregar_producto, name="Add"),
     path('eliminar/<int:producto_id>/', eliminar_producto, name="Del"),
     path('restar/<int:producto_id>/', restar_producto, name="Sub"),
     path('limpiar/', limpiar_carrito, name="CLS"),
+    
 ]
