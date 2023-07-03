@@ -4,10 +4,9 @@ from django.shortcuts import render, HttpResponse, redirect
 from CarritoApp.Carrito import Carrito
 from CarritoApp.models import Producto
 
-#def index(request):
-    
- #   context={}
-  #  return render(request, 'Carrito/index.html', context)
+def index(request):  
+    context={}
+    return render(request, 'CarritoApp/index.html', context)
 
 
 #def carrito(request):
