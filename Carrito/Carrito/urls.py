@@ -29,12 +29,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('index/', index, name="index"),
-<<<<<<< HEAD
-    path('carrito/', tienda, name="Tienda"),
-=======
     path('escuelainglaterra/', escuelaInglaterra, name="escuelainglaterra"),
     path('tienda/', tienda, name="Tienda"),
->>>>>>> 8123f31 (funcionalidad vistas)
     path('agregar/<int:producto_id>/', agregar_producto, name="Add"),
     path('eliminar/<int:producto_id>/', eliminar_producto, name="Del"),
     path('restar/<int:producto_id>/', restar_producto, name="Sub"),
