@@ -1,0 +1,297 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniformes Tocinos</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <!-- css -->
+    <link type='text/css' href='{%static "css/estilo.css" %}' rel='stylesheet'/>
+</head>
+<body>
+    <!-- ============================================== -->
+    <!-- MENU -->
+    <!-- ============================================== -->
+    <header data-bs-theme="light">
+
+        <div class="navbar navbar-expand-lg navbar-light" id="menu">
+          <div class="container">
+            <a href="#" class="navbar-brand ">              
+              <strong><img src='{% static "img/Logos/tocinoslogo.png" %}' alt="" width="150" height="150"></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarHeader">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href= "{% url 'index' %}"  class="nav-link active">Inicio</a>
+
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Catalogo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'escuelainglaterra' %}" >Escuela de Inglaterra</a></li>
+                            <li><a class="dropdown-item" href= '' >Escuela Abate Molina</a></li>
+                        </ul>
+                    </li>
+
+
+                    
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"></a>    
+                    </li>
+                </ul>
+                   <a href="{% url 'Tienda' %}"  class="btn btn-primary">Cotizar</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <main>
+      <!-- ============================================== -->
+    <!-- FIN MENU-->
+    <!-- ============================================== --> 
+
+     
+     
+   
+
+    <!-- ============================================== -->
+    <!-- FOOTER-->
+    <!-- ============================================== --> 
+
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+      <p class="fs-5 px-3 pt-3">Tocinos. &copy; Todos los derechos reservados 2023</p>
+      <div id="iconos">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </footer>
+                
+            
+        </div>
+    </main>
+    <!-- ============================================== -->
+    <!-- FIN FOOTER-->
+    <!-- ============================================== --> 
+
+<!-- JQuery -->
+<script src= "https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+<!-- JavaScript -->
+<script src= '{% static "js/java.js"%}'></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual - Uniformes Tocinos</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        
+    <!-- css -->
+    <link rel="stylesheet" href='{%static "css/estilo.css" %}' >
+</head>
+<body>
+    <!-- ============================================== -->
+    <!-- MENU -->
+    <!-- ============================================== -->
+    <header data-bs-theme="light">
+
+        <div class="navbar navbar-expand-lg navbar-light" id="menu">
+          <div class="container">
+            <a href="#" class="navbar-brand ">              
+              <strong><img src='{% static "img/Logos/tocinoslogo.png" %}'  alt="" width="150" height="150"></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarHeader">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href="{% url 'index' %}"  class="nav-link active">Inicio</a>
+
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Catalogo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'escuelainglaterra' %}">Escuela de Inglaterra</a></li>
+                            <li><a class="dropdown-item" href="">Escuela Abate Molina</a></li>
+                        </ul>
+                    </li>
+
+                    
+                        <a href="#" class="nav-link"></a>    
+                    </li>
+                </ul>
+                <a href="{% url 'Tienda' %}" class="btn btn-primary">Carrito</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    <!-- ============================================== -->
+    <!-- GALERIA DE PRODUCTOS-->
+    <!-- ============================================== -->
+    
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/PoleraEscAbMol1.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Polera</h5>
+                            <p class="card-text">$10.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/PoleraEscAbMol2.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Polera Alternativa</h5>
+                            <p class="card-text">$10.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/FaldaEscAbMol.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Falda</h5>
+                            <p class="card-text">$12.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/BuzoEscAbMol.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Buzo completo.</h5>
+                            <p class="card-text">$30.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/ChaquetaBuzoEscAbMol.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Chaqueta Buzo.</h5>
+                            <p class="card-text">$15.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                    <img src='{% static "img/Productos/AbateMolina/PantalonBuzoEscAbMol.png"%}' alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalon Buzo.</h5>
+                            <p class="card-text">$15.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""class="btn btn-primary">Detalles</a>                        
+                                    </div>                        
+                                <a href=""class="btn btn-success">Agregar</a>                  
+                              </div>  
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    
+    <!-- ============================================== -->
+    <!-- FOOTER-->
+    <!-- ============================================== --> 
+
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Tocinos. &copy; Todos los derechos reservados 2023</p>
+        <div id="iconos">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </footer>
+              
+          </div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+<!-- JavaScript -->
+<script src="js/java.js"></script>
+</body>
+</html>

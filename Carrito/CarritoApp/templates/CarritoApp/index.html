@@ -33,13 +33,13 @@
             <div class="collapse navbar-collapse" id="navbarHeader">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a href= '' class="nav-link active">Inicio</a>
+                        <a href= "{% url 'index' %}"  class="nav-link active">Inicio</a>
 
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Uniformes Colegios</a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Catalogo</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href='' >Escuela de Inglaterra</a></li>
+                            <li><a class="dropdown-item" href="{% url 'escuelainglaterra' %}" >Escuela de Inglaterra</a></li>
                             <li><a class="dropdown-item" href= '' >Escuela Abate Molina</a></li>
                         </ul>
                     </li>
@@ -51,7 +51,7 @@
                         <a href="#" class="nav-link"></a>    
                     </li>
                 </ul>
-                   <a href='' class="btn btn-primary">Cotizar</a>
+                   <a href="{% url 'Tienda' %}"  class="btn btn-primary">Cotizar</a>
             </div>
           </div>
         </div>

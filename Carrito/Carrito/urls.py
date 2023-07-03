@@ -20,7 +20,7 @@ from django.contrib.auth import views as auth_views
 from django.contrib import admin
 from django.urls import path, include
 
-from CarritoApp.views import tienda, agregar_producto, eliminar_producto, restar_producto, limpiar_carrito, index
+from CarritoApp.views import escuelaInglaterra, tienda, agregar_producto, eliminar_producto, restar_producto, limpiar_carrito, index
 
 app_name = 'CarritoApp'
 
@@ -29,7 +29,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('index/', index, name="index"),
+<<<<<<< HEAD
     path('carrito/', tienda, name="Tienda"),
+=======
+    path('escuelainglaterra/', escuelaInglaterra, name="escuelainglaterra"),
+    path('tienda/', tienda, name="Tienda"),
+>>>>>>> 8123f31 (funcionalidad vistas)
     path('agregar/<int:producto_id>/', agregar_producto, name="Add"),
     path('eliminar/<int:producto_id>/', eliminar_producto, name="Del"),
     path('restar/<int:producto_id>/', restar_producto, name="Sub"),

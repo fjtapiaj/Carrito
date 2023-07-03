@@ -8,6 +8,14 @@ def index(request):
     context={}
     return render(request, 'CarritoApp/index.html', context)
 
+def escuelaInglaterra(request):
+    context={}
+    return render(request, 'CarritoApp/escinglaterra.html', context)
+
+def escuelaAbateMolina(request):
+    context={}
+    return render(request, 'CarritoApp/escabatemolina.html', context)
+
 
 #def carrito(request):
     
